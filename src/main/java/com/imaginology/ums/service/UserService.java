@@ -1,15 +1,6 @@
 package com.imaginology.ums.service;
 
 
-import com.imaginology.ums.repository.UserRepository;
-
-public class UserService {
-	UserRepository userRepository ;
-	
-	public void deleteUser() {
-		return userRepository.deleteUserById(id);
-	}
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +8,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.imaginology.ums.entity.User;
 import com.imaginology.ums.repository.UserRepository;
 
-
-
 public class UserService {
 	@Autowired
 	UserRepository userRepository;
-	public List<User> createTeacherEntity(User user){
+	public List<User> createUser(User user){
 		userRepository.save(user);
-		List<User> user=userRepository.findAll();
-		return user;
+		List<User> users=userRepository.findAll();
+		return users;
 }
+	
+	public void deleteUser(Long id) {
+		userRepository.deleteById(id);
+	}
 }
+
+
+
