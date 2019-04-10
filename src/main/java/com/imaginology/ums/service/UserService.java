@@ -17,7 +17,7 @@ UserRepository userRepository;
 		return userRepository.findAll();
 	}
 
-public Optional<User> getUser(Long id) {
+public Optional<User> getOneUser(Long id) {
 	return userRepository.findById(id);
 }
 }
