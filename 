@@ -1,0 +1,36 @@
+[33mcommit 3e41e0fdb2c5e6a58c45ad8a553730f2a8d65efd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 097f653 793c4bc
+Author: khadka <raushanKhadka@gmail.com>
+Date:   Wed Apr 10 19:53:02 2019 +0545
+
+    get one user and get all user created even call in controller
+
+[33mcommit 097f653ded4a8cd965709b4217e68fdada915ec2[m
+Author: khadka <raushanKhadka@gmail.com>
+Date:   Wed Apr 10 19:30:53 2019 +0545
+
+    get all user created
+
+[33mcommit 793c4bcf8c4dcb792b94d36f28759ea57ac935a4[m
+Author: nikhildahal <nikhildahal9@gmail.com>
+Date:   Wed Apr 10 19:30:36 2019 +0545
+
+    repository extends and userservice modified
+
+[33mcommit 999791879875ed6869f1d3985883228e39e865cd[m
+Author: nikhildahal <nikhildahal9@gmail.com>
+Date:   Wed Apr 10 19:18:40 2019 +0545
+
+    entity controller and service added
+
+[33mcommit 052d6e7629d0a0c1806aae1259d998fb96b321e2[m
+Author: nisha936 <nishashrestha936@gmail.com>
+Date:   Wed Apr 10 18:47:02 2019 +0545
+
+    Added required classes
+
+[33mcommit 0b9a971405d4dd732e4b72f5a434152e261e6eb8[m
+Author: nisha936 <nishashrestha936@gmail.com>
+Date:   Wed Apr 10 18:30:20 2019 +0545
+
+    Initial Commit!
