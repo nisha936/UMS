@@ -10,30 +10,30 @@ import javax.persistence.Id;
 public class User implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
-	private String FirstName;
-	private String LastName;
+	private Long id;
+	private String firstName;
+	private String lastName;
 	private String gender;
-	private String UserName;
+	private String userName;
 	private String password;
-	private Long DateOfBirth;
+	private Long dateOfBirth;
 	public Long getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 	public void setFirstName(String firstName) {
-		FirstName = firstName;
+		this.firstName = firstName;
 	}
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
 	public String getGender() {
 		return gender;
@@ -42,10 +42,10 @@ public class User implements Serializable {
 		this.gender = gender;
 	}
 	public String getUserName() {
-		return UserName;
+		return userName;
 	}
 	public void setUserName(String userName) {
-		UserName = userName;
+		this.userName = userName;
 	}
 	public String getPassword() {
 		return password;
@@ -54,11 +54,10 @@ public class User implements Serializable {
 		this.password = password;
 	}
 	public Long getDateOfBirth() {
-		return DateOfBirth;
+		return dateOfBirth;
 	}
 	public void setDateOfBirth(Long dateOfBirth) {
-		DateOfBirth = dateOfBirth;
+		this.dateOfBirth = dateOfBirth;
 	}
 	
-
 }
