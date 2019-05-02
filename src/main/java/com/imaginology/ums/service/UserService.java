@@ -15,7 +15,7 @@ import com.imaginology.ums.repository.UserRepository;
 
 
 
-
+@Service
 public class UserService {
 	@Autowired
 	UserRepository userRepository;
@@ -29,21 +29,12 @@ public class UserService {
 		userRepository.deleteById(id);
 	}
 
-
-
-
-
-
-
-
  public List<User> getAllUsers() {
 		return userRepository.findAll();
 	}
 
 public Optional<User> getOneUser(Long id) {
 	return userRepository.findById(id);
+
 }
 }
-	
-
-

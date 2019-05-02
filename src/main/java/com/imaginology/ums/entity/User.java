@@ -1,6 +1,9 @@
 package com.imaginology.ums.entity;
 
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,7 +19,7 @@ public class User implements Serializable {
 	private String gender;
 	private String userName;
 	private String password;
-	private Long dateOfBirth;
+	private static String dateOfBirth;
 	public Long getId() {
 		return id;
 	}
@@ -53,11 +56,27 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Long getDateOfBirth() {
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
-	public void setDateOfBirth(Long dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
+	public static void main(String[] args) {
+		//String date_s = " 2011-01-18 00:00:00.0"; 
+		SimpleDateFormat dt = new SimpleDateFormat("yyyyy-mm-dd hh:mm:ss"); 
+		Date date = null;
+		try {
+			date = dt.parse(dateOfBirth);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-mm-dd");
+		System.out.println(dt1.format(date));
+		
+	}
+	
+	
 	
 }
