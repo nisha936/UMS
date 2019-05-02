@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 
 import com.imaginology.ums.entity.User;
 import com.imaginology.ums.repository.UserRepository;
-<<<<<<< HEAD
+
 import com.imaginology.ums.entity.User;
 import com.imaginology.ums.repository.UserRepository;
 
 
-=======
+
 
 @Service
 public class UserService {
@@ -28,4 +28,3 @@ public Optional<User> getOneUser(Long id) {
 }
 }
 	
->>>>>>> 6071f2976114e1b6221c068f69ef47771abe1466

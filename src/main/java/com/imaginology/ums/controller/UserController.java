@@ -15,32 +15,31 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.imaginology.ums.entity.User;
 import com.imaginology.ums.service.UserService;
-<<<<<<< HEAD
 
 public class UserController {
 	@Autowired
 	UserService userService;
-	@PostMapping
-=======
+	
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
 	@Autowired
 	UserService userService;
-<<<<<<< HEAD
->>>>>>> 5ef41fee845efde101373687cc5bba55b3b80c6d
+
+
 	@ResponseStatus(code=HttpStatus.CREATED)
 	public List<User> createUser(@RequestBody User user){
 		return userService.createUser(user);
 	}
-@RequestMapping(value="getalluser",method=RequestMethod.Get)
-=======
+
+
 	//@ResponseStatus(code=HttpStatus.CREATED)
 	//public List<User> createUser(@RequestBody User user){
 	//	return userService.createUser(user);
 	//}
 @RequestMapping(value="getalluser",method=RequestMethod.GET)
->>>>>>> 6071f2976114e1b6221c068f69ef47771abe1466
+
 public List<User>getAllUsers(){
 	return userService.getAllUsers();
 }
@@ -49,6 +48,7 @@ public  Optional<User> getOneUser(@PathVariable Long id) {
 	return userService.getOneUser(id);
 }
 	
-
-
+	}
 }
+
+
