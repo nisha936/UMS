@@ -4,6 +4,7 @@ package com.imaginology.ums.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.imaginology.ums.entity.User;
 import com.imaginology.ums.repository.UserRepository;
@@ -24,3 +25,18 @@ public class UserService {
 
 
 
+@Service
+public class UserService {
+@Autowired
+UserRepository userRepository;
+ List<User> getAllUsers()
+{
+	return userRepository.findAll();
+}
+
+
+public getUser(Long id) {
+	return userRepository.findById(id)
+}
+	
+}
